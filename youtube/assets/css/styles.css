@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'YouTube Sans', sans-serif;
+}
+
+i {
+	color: gray;
+	font-size: 1rem;
+}
+
+header {
+	background: white;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	cursor: pointer;
+}
+
+header .search {
+	border: 1px solid lightgrey;
+	height: 2rem;
+	width: 45rem;
+	display: flex;
+}
+
+header .search input {
+	height: 100%;
+	width: 90%;
+	padding: .6rem;
+	border: none;
+	font-family: 'YouTube Sans', sans-serif;
+	font-size: 1rem;
+}
+
+header .search input:focus {
+	outline: none;
+}
+
+header .search span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10%;
+	border-left: 1px solid lightgrey;
+	cursor: pointer;
+}
+
+header .buttons {
+	display: flex;
+	align-items: center;
+	margin-right: 1.5rem;
+}
+
+header .buttons i {
+	margin: 0 .8rem;
+}
+
+header .buttons .profile-icon {
+	margin-left: .8rem;
+	background: black;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+}
+
+header .buttons > i, header .buttons > div {
+	cursor: pointer;
+}
+
+main {
+	padding: 1rem 2rem;
+}
+
+main .videos {
+	display: flex;
+}
+
+main .player {
+	background: black;
+	width: 65vw;
+	height: 70vh;
+	position: relative;
+	margin-right: 1.5rem;
+}
+
+main .player .play-button {
+	background: url("../images/play.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: calc(50% - 50px);
+	left: calc(50% - 50px);
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+}
+
+main .videos .recommendations {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+}
+
+main .videos .recommendations .thumb1 {
+	background: url("../images/thumb1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 220px;
+	height: 140px;
+	border: 1px solid black;
+}
