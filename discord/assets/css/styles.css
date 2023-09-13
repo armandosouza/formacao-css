@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	background: url("../images/header.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 4rem 0;
+	text-align: center;
+	color: white;
+}
+
+h1 {
+	font-family: 'Luckiest Guy', sans-serif;
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	width: 270px;
+	margin: 0 auto;
+}
+
+header p {
+	width: 50%;
+	margin: 2rem auto 1rem;
+}
+
+header .buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+header .buttons span {
+	border-radius: 1.5rem;
+	margin: .5rem .4rem;
+	padding: .6rem 1rem;
+}
+
+header .buttons span:first-of-type {
+	background-color: whitesmoke;
+	color: #23272A;
+}
+
+header .buttons span:last-of-type {
+	background-color: #23272A;
+}
+
+main {
+	padding: 2rem 3rem;
+}
+
+main section h2 {
+	color: #23272A;
+	font-size: 3rem;
+	font-weight: 800;
+	letter-spacing: -2px;
+}
+
+main section {
+	display: flex;
+	justify-content: center;
+	padding: 2rem 6rem;
+	align-items: center;
+	gap: .5rem;
+}
+
+main section:nth-child(2) {
+	flex-direction: row-reverse;
+}
+
+main article {
+	padding: 2rem 3rem;
+	text-align: center;
+	color: #23272A;
+}
+
+main article .title {
+	font-family: 'Luckiest Guy', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+}
+
+main article p {
+	margin: 1rem auto;
+	width: 70%;
+}
+
+footer {
+	text-align: center;
+	background-color: #23272A;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 779px) {
+	main section {
+		flex-wrap: wrap;
+		flex-direction: column;
+		padding: 2rem 1rem;
+	}
+
+	main:nth-child(2) {
+		order: initial;
+	}
+
+	main article {
+		padding: 2rem 1rem;
+	}
+
+	header p, main article p {
+		width: 90%;
+	}
+
+	header .buttons span {
+		width: 90%;
+		margin: 0.3rem auto;
+	}
+}
