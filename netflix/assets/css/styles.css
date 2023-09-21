@@ -1,0 +1,227 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Public Sans', sans-serif;
+	color: white;
+	font-weight: 500;
+}
+
+h2 {
+	font-weight: 800;
+	font-size: 3rem;
+	margin: 1rem 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.button {
+	background-color: red;
+	font-weight: bold;
+	padding: .5rem 1rem;
+	border-radius: .2rem;
+	font-size: .9rem;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.button:hover {
+	background-color: darkred;
+}
+
+header {
+	background: url("https://assets.nflxext.com/ffe/siteui/vlv3/f85718e8-fc6d-4954-bca0-f5eaf78e0842/37171454-979d-4d94-8450-52228ced006e/BR-pt-20230918-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: inset 15px 88px 155px black;
+}
+
+header .header-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 0;
+}
+
+header .header-top img {
+	max-width: 100%;
+}
+
+header .header-text {
+	padding: 8rem 0;
+	text-align: center;
+}
+
+header .header-text p {
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+header .header-text span {
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+header .header-form {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+header .header-form input {
+	height: 3.5rem;
+	padding: 1rem;
+	background-color: #242526;
+	opacity: 0.8;
+	outline: none;
+	border-radius: .3rem;
+	border: 1px solid grey;
+	width: 40%;
+	color: white;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 1rem;
+}
+
+header .header-form input::placeholder {
+	color: white;
+}
+
+header .header-form button {
+	border: none;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-family: 'Public Sans', sans-serif;
+	height: 3.5rem;
+	padding: 0 2rem;
+	border-radius: .3rem;
+	margin-left: .5rem;
+}
+
+main {
+	background: black;
+	position: relative;
+}
+
+main .banner {
+	left: 7.5%;
+	width: 85%;
+	position: absolute;
+	transform: translateY(-50%);
+	padding: 1rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
+	border-radius: 4px;
+}
+
+main .banner .banner-text {
+	margin-left: 2rem;
+}
+
+main .banner h3, main .banner h4 {
+	margin-bottom: .5rem;
+}
+
+main .banner a {
+	color: skyblue;
+	text-decoration: underline;
+}
+
+main .sections {
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+}
+
+main .sections section {
+	display: flex;
+	align-items: center;
+	border-bottom: 5px solid #242526;
+	padding-top: 3rem;
+	padding-bottom: 5rem;
+}
+
+main .sections section .section-text {
+	flex: 2;
+}
+
+main .sections section img {
+	min-width: 50%;
+	width: 50%;
+}
+
+main .sections section p {
+	font-size: 1.5rem;
+}
+
+main .faq {
+	padding-bottom: 3rem;
+	border-bottom: 5px solid #242526;
+}
+
+main .faq h2 {
+	font-weight: 800;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+main .faq .question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #242526;
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+	font-weight: 300;
+	transition: .5s;
+	cursor: pointer;
+	margin-top: .5rem;
+}
+
+main .faq .question:hover {
+	background-color: #202422;
+}
+
+main .faq .question .more {
+	font-size: 3rem;
+	font-weight: lighter;
+	padding: 0;
+	margin: 0;
+}
+
+footer {
+	color: lightgrey;
+	background: black;
+	padding: 4rem 0;
+}
+
+footer a {
+	color: lightgrey;
+	text-decoration: underline;
+}
+
+footer .columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .column ul {
+	padding: .7rem 0;
+	list-style-type: none;
+}
+
+footer .column ul li {
+	font-size: .9rem;
+	margin: 1rem 0;
+}
+
+footer span {
+	font-size: .9rem;
+}
