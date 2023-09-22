@@ -92,6 +92,10 @@ header .header-form input::placeholder {
 	color: white;
 }
 
+header .header-form input:focus {
+	border: 1px solid white;
+}
+
 header .header-form button {
 	border: none;
 	color: white;
